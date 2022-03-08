@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>{% block title %}{% endblock title %}</title>
+    {% include 'snippetslog/styles.html' %}
+  </head>
+  <body>
+    
+    {% block content %}
+        
+    {% endblock content %}
+        
+    <!-- container-scroller -->
+   {% include 'snippetslog/scripts.html' %}
+  </body>
+</html>

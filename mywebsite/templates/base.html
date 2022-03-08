@@ -1,0 +1,29 @@
+{%load static%}
+<!DOCTYPE html>
+<!--
+	ustora by freshdesignweb.com
+	Twitter: https://twitter.com/freshdesignweb
+	URL: https://www.freshdesignweb.com/ustora/
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+    {% block title %}{% endblock title %}
+    </title>
+    {% include 'snippets/styles.html' %}
+  </head>
+  <body>
+    {% include 'snippets/headers.html' %}
+
+    
+    
+    {% block content %}
+        
+    {% endblock content %}
+        
+   {% include 'snippets/scripts.html' %}
+  </body>
+</html>
